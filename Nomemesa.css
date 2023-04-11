@@ -1,51 +1,69 @@
-.tela {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
   }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  select,
-  textarea {
+
+:root{
+    --cor-de-fundo: #ffffff;
+    --cor-primaria: #E1E1E1;
+    --cor-input: #999999;
+    --cor-do-texto: #D9D9D9;
+    --cor-do-botao: #C50000;
+}
+
+html, body {
+    background-color: var(--cor-de-fundo);
+    font-family: Arial, sans-serif;
+    height: 110%;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
-  }
+}
+
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    
+    
+}
+.profile-header img{
+  margin-left: 12%;
+}
+
+.profile-stats{
+  margin-top: 30px;
+}
+
+.profile-stats p{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10px;
   
-  textarea {
-    height: 100px;
-  }
+}
   
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+  
+button {
+    background-color: var(--cor-do-botao);
+    color: var(--cor-do-texto);
+    padding: 14px 20px;
+    margin: 16px 0;
+    margin-top: 200px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
+    width: 100%;
+}
+
+
+button:hover {
+    background-color: #c50000d7;
+}
